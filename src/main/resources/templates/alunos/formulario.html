@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Aluno</title>
+</head>
+<body>
+    <h1>Cadastro de Aluno</h1>
+
+    <form th:action="@{/alunos/salvar}" th:object="${aluno}" method="post">
+        <label>Nome:</label>
+        <input type="text" th:field="*{nome}" /></br>
+        <span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}" style="color:red"></span><br />
+
+        <label>Email:</label>
+        <input type="text" th:field="*{email}" /><br />
+        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" style="color:red"></span><br />
+
+        <label>Matrícula</label>
+        <input type="text" th:field="*{matricula}" /><br />
+
+        <label>Cursos:</label>
+        <select th:field="*{curso}">
+            <option value="">Seleciona um curso</option>
+            <option th:each="c : ${listaCursos}" th:value="${c.id}" th:text="${c.nome}"></option>
+        </select>
+
+        <br />
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    </br>
+
+    <a href="/alunos">Voltar</a>
+</body>
+</html>

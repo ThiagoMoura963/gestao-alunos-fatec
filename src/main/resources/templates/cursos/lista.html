@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos</title>
+</head>
+<body>
+    <h1>Cursos</h1>
+    <a href="/cursos/novo">Novo Curso</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Carga Horária</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="c : ${cursos}">
+                <td th:text="${c.id}"></td>
+                <td th:text="${c.nome}"></td>
+                <td th:text="${c.cargaHoraria}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/">Voltar</a>
+</body>
+</html>

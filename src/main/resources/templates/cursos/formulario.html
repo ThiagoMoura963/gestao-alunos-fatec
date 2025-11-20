@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Curso</title>
+</head>
+<body>
+    <h1>Cadastro de Curso</h1>
+    <form th:action="@{/cursos/salvar}" th:object="${curso}" method="post">
+        <label>Nome:</label>
+        <input type="text" th:field="*{nome}" required /><br />
+
+        <label>Carga Horária:</label>
+        <input type="number" th:field="*{cargaHoraria}" /><br />
+
+        <label>Descrição:</label>
+        <textarea th:field="*{descricao}"></textarea><br />
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    </br>
+
+    <a href="/cursos">Voltar</a>
+</body>
+</html>
