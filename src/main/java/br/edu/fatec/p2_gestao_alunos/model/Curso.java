@@ -4,6 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Curso {
@@ -11,14 +14,20 @@ public class Curso {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "O nome é obrigatório")
     private String nome;
-    private int cargaHoraria;
+
+    @NotNull(message = "A carga horária é obrigatória")
+    @Min(value = 1, message = "A carga horária deve ser de no mínimo 1 hora")
+    private Integer cargaHoraria;
+
+    @NotBlank(message = "A descrição é obrigatória")
     private String descricao;
 
     public Curso() {
     }
 
-    public Curso(Long id, String nome, int cargaHoraria, String descricao) {
+    public Curso(Long id, String nome, Integer cargaHoraria, String descricao) {
         this.id = id;
         this.nome = nome;
         this.cargaHoraria = cargaHoraria;
@@ -33,12 +42,11 @@ public class Curso {
 
     public void setNome(String nome) { this.nome = nome; }
 
-    public int getCargaHoraria() { return cargaHoraria; }
+    public Integer getCargaHoraria() { return cargaHoraria; }
 
-    public void setCargaHoraria(int cargaHoraria) { this.cargaHoraria = cargaHoraria; }
+    public void setCargaHoraria(Integer cargaHoraria) { this.cargaHoraria = cargaHoraria; }
 
     public String getDescricao() { return descricao; }
 
     public void setDescricao(String descricao) { this.descricao = descricao; }
 }
-

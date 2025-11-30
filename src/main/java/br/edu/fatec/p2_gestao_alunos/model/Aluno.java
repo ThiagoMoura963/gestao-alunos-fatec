@@ -18,6 +18,7 @@ public class Aluno {
     @Email(message = "Email inválido")
     private String email;
 
+    @NotBlank(message = "Matrícula obrigatória")
     private String matricula;
 
     @ManyToOne
