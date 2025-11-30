@@ -6,9 +6,7 @@ Projeto desenvolvido como parte da avaliação P2 do curso de Análise e Desenvo
 
 Confira a explicação detalhada do código e o funcionamento do projeto no YouTube:
 
-[![Assista ao Vídeo](https://img.youtube.com/vi/ID_DO_VIDEO_AQUI/0.jpg)](LINK_DO_SEU_VIDEO_AQUI)
-
-> **Clique na imagem acima ou [neste link](LINK_DO_SEU_VIDEO_AQUI) para assistir.**
+> **Clique na imagem acima ou [neste link]([LINK_DO_SEU_VIDEO_AQUI](https://www.youtube.com/watch?v=Nq6rA9WgfTQ)) para assistir.**
 
 ---
 
@@ -52,9 +50,3 @@ O "coração" da aplicação, responsável por orquestrar o fluxo de dados.
 * Utiliza **Thymeleaf** para renderizar os dados vindos do Controller e exibir mensagens de erro de validação para o usuário.
 
 ---
-
-## Como Rodar o Projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/ThiagoMoura963/NOME-DO-REPOSITORIO.git](https://github.com/ThiagoMoura963/NOME-DO-REPOSITORIO.git)
