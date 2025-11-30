@@ -48,5 +48,3 @@ O "coração" da aplicação, responsável por orquestrar o fluxo de dados.
 ### 4. View (Camada de Visualização)
 * Arquivos HTML localizados em `src/main/resources/templates`.
 * Utiliza **Thymeleaf** para renderizar os dados vindos do Controller e exibir mensagens de erro de validação para o usuário.
-
----
