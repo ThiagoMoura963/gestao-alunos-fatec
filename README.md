@@ -14,8 +14,8 @@ Confira a explicação detalhada do código e o funcionamento do projeto no YouT
 
 * **Java 17+**
 * **Spring Boot 3** (Web, JPA, Validation)
-* **Thymeleaf** (Template Engine)
-* **Banco de Dados:** H2 / MySQL (Dependendo da sua config)
+* **Thymeleaf**
+* **Banco de Dados:** H2
 * **Maven** (Gerenciador de Dependências)
 
 ---
