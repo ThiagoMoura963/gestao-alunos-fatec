@@ -2,7 +2,7 @@
 
 Projeto desenvolvido como parte da avaliação P2 do curso de Análise e Desenvolvimento de Sistemas da FATEC. O objetivo da aplicação é permitir o cadastro de cursos e a matrícula de alunos, gerenciando o relacionamento entre eles e garantindo a integridade dos dados.
 
-## 📺 Demonstração em Vídeo
+## Demonstração em Vídeo
 
 Confira a explicação detalhada do código e o funcionamento do projeto no YouTube:
 
