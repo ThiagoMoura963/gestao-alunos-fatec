@@ -6,7 +6,7 @@ Projeto desenvolvido como parte da avaliação P2 do curso de Análise e Desenvo
 
 Confira a explicação detalhada do código e o funcionamento do projeto no YouTube:
 
-> **Clique na imagem acima ou [neste link]([https://www.youtube.com/watch?v=Nq6rA9WgfTQ]) para assistir.**
+> **Clique [neste link]([https://www.youtube.com/watch?v=Nq6rA9WgfTQ]) para assistir.**
 
 ---
 
@@ -36,7 +36,7 @@ Responsável pela comunicação direta com o banco de dados.
 * **Produtividade:** Isso abstrai a necessidade de escrever SQL manual, fornecendo automaticamente métodos de CRUD como `save()`, `findAll()` e `delete()`.
 
 ### 3. Controller (Camada de Controle)
-O "coração" da aplicação, responsável por orquestrar o fluxo de dados.
+Responsável por gerenciar o fluxo de dados.
 * **Injeção de Dependência:** Utilização do `@Autowired` para injetar as instâncias dos repositórios, garantindo baixo acoplamento.
 * **Métodos GET:**
     * `listar()`: Busca os dados e preenche o objeto `Model` para exibição na View.
