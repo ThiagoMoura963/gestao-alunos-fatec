@@ -6,7 +6,7 @@ Projeto desenvolvido como parte da avaliação P2 do curso de Análise e Desenvo
 
 Confira a explicação detalhada do código e o funcionamento do projeto no YouTube:
 
-> **Clique na imagem acima ou [neste link]([LINK_DO_SEU_VIDEO_AQUI](https://www.youtube.com/watch?v=Nq6rA9WgfTQ)) para assistir.**
+> **Clique na imagem acima ou [neste link]([https://www.youtube.com/watch?v=Nq6rA9WgfTQ]) para assistir.**
 
 ---
 
