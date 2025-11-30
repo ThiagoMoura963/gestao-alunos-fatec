@@ -17,14 +17,14 @@
         <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" style="color:red"></span><br />
 
         <label>Matrícula</label>
-        <input type="text" th:field="*{matricula}" /><br />
+        <input type="text" th:field="*{matricula}" /><br /><br />
 
         <label>Cursos:</label>
         <select th:field="*{curso}">
             <option value="">Seleciona um curso</option>
             <option th:each="c : ${listaCursos}" th:value="${c.id}" th:text="${c.nome}"></option>
         </select>
-
+        <br />
         <br />
 
         <button type="submit">Salvar</button>

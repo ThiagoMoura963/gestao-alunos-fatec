@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Alunos</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <h1>Alunos Cadastrados</h1>
     <a href="/alunos/novo">Novo Aluno</a>
-    <br>
-    <table>
+    <br />
+    <table :style="{ border: '1px solid black', borderCollapse: 'collapse' }">
         <thead>
             <tr>
                 <th>ID</th>
@@ -30,7 +48,7 @@
         </tbody>
     </table>
 
-    <br>
+    <br />
     <a href="/">Voltar</a>
 </body>
 </html>

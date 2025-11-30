@@ -8,13 +8,13 @@
     <h1>Cadastro de Curso</h1>
     <form th:action="@{/cursos/salvar}" th:object="${curso}" method="post">
         <label>Nome:</label>
-        <input type="text" th:field="*{nome}" required /><br />
+        <input type="text" th:field="*{nome}" required /><br /><br />
 
         <label>Carga Horária:</label>
-        <input type="number" th:field="*{cargaHoraria}" /><br />
+        <input type="number" th:field="*{cargaHoraria}" /><br /><br />
 
         <label>Descrição:</label>
-        <textarea th:field="*{descricao}"></textarea><br />
+        <textarea th:field="*{descricao}" rows="5" cols="33"></textarea><br /><br />
 
         <button type="submit">Salvar</button>
     </form>

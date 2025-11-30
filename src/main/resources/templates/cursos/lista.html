@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Cursos</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <h1>Cursos</h1>
-    <a href="/cursos/novo">Novo Curso</a>
+    <a href="/cursos/novo">Novo Curso</a> <br />
 
     <table>
         <thead>
@@ -23,7 +40,7 @@
                 <td th:text="${c.cargaHoraria}"></td>
             </tr>
         </tbody>
-    </table>
+    </table> <br />
     <a href="/">Voltar</a>
 </body>
 </html>
