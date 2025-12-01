@@ -1,5 +1,7 @@
 # Sistema de Gestão de Alunos - FATEC (P2)
 
+Alunos: Erick Pinheiro, Henrique Oliveira e Thiago Moura.
+
 Projeto desenvolvido como parte da avaliação P2 do curso de Análise e Desenvolvimento de Sistemas da FATEC. O objetivo da aplicação é permitir o cadastro de cursos e a matrícula de alunos, gerenciando o relacionamento entre eles e garantindo a integridade dos dados.
 
 ## Demonstração em Vídeo
